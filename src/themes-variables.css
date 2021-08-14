@@ -1,0 +1,11 @@
+body.dark {
+    --elements-background: hsl(209, 23%, 22%);
+    --text-color: white;
+    --page-background: hsl(207, 26%, 17%);
+}
+
+body.light {
+    --elements-background: white;
+    --text-color: hsl(200, 15%, 8%);
+    --page-background: hsl(0, 0%, 98%);
+}

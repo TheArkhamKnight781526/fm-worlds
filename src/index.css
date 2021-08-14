@@ -1,13 +1,84 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans';
+  scrollbar-width: none;
+  max-width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body, html, #root {
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  background: var(--page-background);
+  padding: 0 50px;
+}
+
+.search {
+  height: 50px;
+  width: 100%;
+  max-width: 500px;
+  background: var(--elements-background);
+  color: var(--text-color);
+  display: flex;
+  border-radius: 10px;
+  position: relative;
+  margin-right: 20px;;
+}
+
+.search input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: inherit;
+  padding-left: 60px;
+  padding-right: 20px;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cards {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.top {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 779px) {
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .search {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }

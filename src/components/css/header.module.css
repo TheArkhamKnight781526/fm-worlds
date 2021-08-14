@@ -1,0 +1,40 @@
+.header {
+    width: 100vw;
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-between;
+    height: 100px;
+    background: var(--elements-background);
+    color: var(--text-color);
+    align-items: center;
+  }
+  
+  .theme {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .theme .icon {
+    margin-right: 30px;
+  }
+
+  .logo {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 779px) {
+    .logo {
+      font-size: 10px;
+      padding-right: 20px;
+    }
+
+    .header {
+      padding: 0 20px;
+    }
+
+    .theme .icon {
+      margin-right: 10px;
+    }
+  }
